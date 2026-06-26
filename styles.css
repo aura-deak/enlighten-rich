@@ -1,8 +1,8 @@
 :root {
-    --primary: #FFC107;
-    --primary-dark: #FFA000;
-    --primary-light: #FFD54F;
-    --primary-bg: #FFF8E1;
+    --primary: #F5E6D3;
+    --primary-dark: #E8D5C4;
+    --primary-light: #FAF0E6;
+    --primary-bg: #FFF8F0;
     --income: #4CAF50;
     --income-light: #C8E6C9;
     --expense: #F44336;
@@ -10,11 +10,11 @@
     --text: #333333;
     --text-secondary: #666666;
     --text-light: #999999;
-    --border: #E0E0E0;
-    --bg: #FAFAFA;
+    --border: #F0E6D8;
+    --bg: #FFFDF5;
     --card-bg: #FFFFFF;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    --shadow-hover: 0 4px 16px rgba(255, 193, 7, 0.3);
+    --shadow-hover: 0 4px 16px rgba(245, 230, 211, 0.4);
     --radius: 12px;
     --radius-sm: 8px;
     --transition: all 0.3s ease;
@@ -45,7 +45,7 @@ body {
 .header {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     padding: 20px;
-    color: white;
+    color: #5D4037;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -78,14 +78,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(93, 64, 55, 0.1);
     padding: 8px 20px;
     border-radius: var(--radius);
 }
 
 .balance-label {
     font-size: 11px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(93, 64, 55, 0.7);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -93,13 +93,13 @@ body {
 .balance-value {
     font-size: 20px;
     font-weight: 700;
-    color: white;
+    color: #3E2723;
 }
 
 .month-btn {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(93, 64, 55, 0.15);
     border: none;
-    color: white;
+    color: #5D4037;
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -111,7 +111,7 @@ body {
 }
 
 .month-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(93, 64, 55, 0.25);
     transform: scale(1.1);
 }
 
@@ -175,8 +175,8 @@ body {
 
 .calendar-day:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-hover);
-    border-color: var(--primary-light);
+    box-shadow: 0 4px 16px rgba(232, 213, 196, 0.5);
+    border-color: #E8D5C4;
 }
 
 .calendar-day.other-month {
@@ -184,12 +184,12 @@ body {
 }
 
 .calendar-day.today {
-    background: linear-gradient(135deg, var(--primary-bg) 0%, var(--primary-light) 100%);
-    border-color: var(--primary);
+    background: linear-gradient(135deg, #FFF8F0 0%, #FAF0E6 100%);
+    border-color: #E8D5C4;
 }
 
 .calendar-day.has-record {
-    border-color: var(--primary-light);
+    border-color: #E8D5C4;
 }
 
 .day-number {
@@ -200,7 +200,7 @@ body {
 }
 
 .calendar-day.today .day-number {
-    color: var(--primary-dark);
+    color: #3E2723;
 }
 
 .day-amounts {
@@ -271,8 +271,8 @@ body {
 }
 
 .time-btn.active {
-    background: var(--primary);
-    color: white;
+    background: #5D4037;
+    color: #FAF0E6;
     font-weight: 600;
 }
 
@@ -384,8 +384,8 @@ body {
 }
 
 .export-btn {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    color: white;
+    background: linear-gradient(135deg, #8D6E63 0%, #5D4037 100%);
+    color: #FAF0E6;
     border: none;
     padding: 14px 32px;
     border-radius: var(--radius);
@@ -436,7 +436,7 @@ body {
 }
 
 .setting-item:hover {
-    background: var(--primary-bg);
+    background: rgba(93, 64, 55, 0.08);
 }
 
 .setting-info {
@@ -453,8 +453,8 @@ body {
 }
 
 .setting-btn {
-    background: var(--primary);
-    color: white;
+    background: #5D4037;
+    color: #FAF0E6;
     border: none;
     padding: 8px 16px;
     border-radius: var(--radius-sm);
@@ -467,7 +467,7 @@ body {
 }
 
 .setting-btn:hover {
-    background: var(--primary-dark);
+    background: #3E2723;
 }
 
 .setting-btn.danger {
@@ -542,12 +542,12 @@ body {
 }
 
 .nav-item.active {
-    color: var(--primary-dark);
-    background: var(--primary-bg);
+    color: #FAF0E6;
+    background: #5D4037;
 }
 
 .nav-item:hover:not(.active) {
-    background: var(--primary-bg);
+    background: rgba(93, 64, 55, 0.1);
 }
 
 /* Floating Add Button */
@@ -558,12 +558,12 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    background: linear-gradient(135deg, #8D6E63 0%, #5D4037 100%);
     border: none;
-    color: white;
+    color: #FAF0E6;
     font-size: 28px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+    box-shadow: 0 4px 15px rgba(93, 64, 55, 0.4);
     transition: var(--transition);
     z-index: 99;
     display: flex;
@@ -573,7 +573,7 @@ body {
 
 .fab-add:hover {
     transform: scale(1.1) rotate(90deg);
-    box-shadow: 0 6px 20px rgba(255, 193, 7, 0.5);
+    box-shadow: 0 6px 20px rgba(93, 64, 55, 0.5);
 }
 
 .fab-add:active {
@@ -622,7 +622,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid #E8D5C4;
 }
 
 .modal-header h3 {
@@ -668,9 +668,9 @@ body {
 }
 
 .type-btn.active {
-    border-color: var(--primary);
-    background: var(--primary-bg);
-    color: var(--primary-dark);
+    border-color: #E8D5C4;
+    background: #FFF8F0;
+    color: #5D4037;
     font-weight: 600;
 }
 
@@ -717,8 +717,8 @@ body {
 .form-group input:focus,
 .form-group select:focus {
     outline: none;
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1);
+    border-color: #E8D5C4;
+    box-shadow: 0 0 0 3px rgba(232, 213, 196, 0.3);
 }
 
 .form-group input::placeholder {
@@ -728,8 +728,8 @@ body {
 .submit-btn {
     width: 100%;
     padding: 14px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    color: white;
+    background: linear-gradient(135deg, #8D6E63 0%, #5D4037 100%);
+    color: #FAF0E6;
     border: none;
     border-radius: var(--radius);
     font-size: 16px;
@@ -748,7 +748,7 @@ body {
 .day-summary {
     display: flex;
     padding: 16px 20px;
-    background: var(--primary-bg);
+    background: #FFF8F0;
     gap: 20px;
 }
 
@@ -788,7 +788,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 12px 0;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid #E8D5C4;
 }
 
 .day-record-item:last-child {
@@ -852,10 +852,10 @@ body {
     width: calc(100% - 40px);
     margin: 20px;
     padding: 12px;
-    background: var(--primary-bg);
-    border: 2px dashed var(--primary);
+    background: #FFF8F0;
+    border: 2px dashed #E8D5C4;
     border-radius: var(--radius-sm);
-    color: var(--primary-dark);
+    color: #5D4037;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
@@ -867,8 +867,8 @@ body {
 }
 
 .add-day-record-btn:hover {
-    background: var(--primary);
-    color: white;
+    background: #E8D5C4;
+    color: #3E2723;
 }
 
 /* Confirm Modal */
@@ -988,12 +988,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-light);
+    background: #E8D5C4;
     border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary);
+    background: #F5E6D3;
 }
 
 /* Responsive */

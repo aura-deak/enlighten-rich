@@ -1,0 +1,21 @@
+{
+  "name": "enlighten-rich",
+  "version": "1.0.0",
+  "description": "妙启财 EnlightenRich - 个人记账软件",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "accounting",
+    "finance",
+    "personal-finance"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}

@@ -1,3 +1,7 @@
+if (typeof module !== 'undefined' && module.exports) {
+    global.DataManager = require('./data.js');
+}
+
 const ChartManager = {
     trendChart: null,
     incomeCategoryChart: null,

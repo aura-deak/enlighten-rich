@@ -1,4 +1,4 @@
-const DataManager = {
+var DataManager = {
     STORAGE_KEY: 'enlightenrich_records',
     BACKUP_KEY: 'enlightenrich_backup',
 

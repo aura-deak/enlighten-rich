@@ -1,3 +1,8 @@
+if (typeof module !== 'undefined' && module.exports) {
+    global.DataManager = require('./data.js');
+    global.ChartManager = require('./chart.js');
+}
+
 const App = {
     currentYear: new Date().getFullYear(),
     currentMonth: new Date().getMonth() + 1,
@@ -275,9 +280,10 @@ const App = {
     },
 
     openRecordModalFromDay() {
+        const dateStr = this.selectedDate;
         this.closeDayDetailModal();
         this.editingRecordId = null;
-        this.openRecordModal('expense', this.selectedDate);
+        this.openRecordModal('expense', dateStr);
     },
 
     closeRecordModal() {
@@ -559,3 +565,7 @@ const App = {
 document.addEventListener('DOMContentLoaded', () => {
     App.init();
 });
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = App;
+}
