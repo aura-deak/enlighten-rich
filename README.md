@@ -1,7 +1,3 @@
-![Stone Badge](https://stone.professorlee.work/api/stone/alu-deak/enlighten-rich)
-
-网络上说说就得了，现实中谁不想急头白脸的在readme里养一只石墩子做宠物（
-
 # 妙启财 EnlightenRich
 
 一款专业的个人记账软件，采用原生 HTML + CSS + JavaScript 开发。
